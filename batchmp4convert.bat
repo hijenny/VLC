@@ -1,0 +1,1 @@
+for %%a in (*.MTS) do cmd /c "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" -I dummy -vvv %%a --sout=#transcode{vcodec=h264,acodec=mp4a}:standard{access=file,mux=mp4,dst=Videos\%%~na.mp4} vlc://quit
